@@ -2,14 +2,14 @@
   "name": "vizlix-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vimalrajsiwan.github.io/next-web",
+  "homepage": "https://vizlyx.com",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
     "export": "next export",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out --add"
   },
   "dependencies": {
     "next": "15.5.6",
