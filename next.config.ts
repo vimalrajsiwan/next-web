@@ -3,7 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
-  basePath: '/next-web', // 👈 Replace with your repo name
+  // basePath: '/next-web', // 👈 Replace with your repo name
+  // assetPrefix: '/next-web/', // 👈 also add this line
+  //  basePath: "", // leave empty since you are using a custom domain like vizlyx.com
+  // assetPrefix: "./", // important for relative asset paths
+  //  basePath: '/next-web',
+  // assetPrefix: '/next-web/',
   images: {
     unoptimized: true,
   },

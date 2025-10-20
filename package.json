@@ -7,9 +7,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "export": "next export",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out --add"
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "next": "15.5.6",
