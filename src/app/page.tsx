@@ -1,18 +1,57 @@
+// "use client";
 
-import Image from "next/image";
+// import HeroSection from "@/component/HeroSection";
+// import ServicesSection from "@/component/ServicesSection";
+// import CTASection from "@/component/CTASection";
+// import AboutSection from "@/component/AboutSection";
+// import FooterSection from "@/component/FooterSection";
+// import WhyChooseUsSection from "@/component/WhyChooseUsSection";
+// import IndustriesSection from "@/component/IndustriesSection";
 
-export default function Home() {
+// export default function Page() {
+//   return (
+//     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 px-4 font-sans">
+//       <HeroSection />
+//       <AboutSection />
+//       <ServicesSection />
+//       <WhyChooseUsSection />
+//       <IndustriesSection />
+//       <CTASection />
+//     </div>
+//   );
+// }
+
+"use client";
+
+import HeroSection from "@/component/HeroSection";
+import AboutSection from "@/component/AboutSection";
+import ServicesSection from "@/component/ServicesSection";
+import WhyChooseUsSection from "@/component/WhyChooseUsSection";
+import IndustriesSection from "@/component/IndustriesSection";
+import CTASection from "@/component/CTASection";
+import Head from "next/head";
+import SEOHead from "@/component/SEOHead";
+
+export default function Page() {
   return (
-    <div className="font-sans min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-900">
-      {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center py-24 px-4 bg-white text-gray-900 shadow-xl border-b border-gray-100">
-        <Image src="/images/horo-section.jpg" alt="Team working" width={600} height={320} className="rounded-2xl mb-10 shadow-xl object-cover w-full max-w-2xl" priority />
-        <h1 className="text-5xl sm:text-7xl font-extrabold mb-6 tracking-tight text-center font-sans">VizLix</h1>
-        <p className="text-2xl sm:text-3xl mb-10 text-center max-w-3xl font-sans">Empowering Your Business with Innovative IT Solutions</p>
-        {/* <a href="#contact" className="bg-indigo-700/500 text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-indigo-800 transition text-lg">Get in Touch</a> */}
-      </section>
+    <>
+      <SEOHead
+        // title="IT Services & Solutions"
+        title="Home"
+        description="Vizlyx provides expert IT services including web development, cloud solutions, and IT consulting. Boost your business with our tailored technology solutions."
+        keywords="IT services, web development, cloud solutions, IT consulting, Vizlyx"
+        url="https://vizlyx.com"
+        image="https://vizlyx.com/og-image.jpg"
+      />
 
-      
-    </div>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans">
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <WhyChooseUsSection />
+        <IndustriesSection />
+        <CTASection />
+      </div>
+    </>
   );
 }
