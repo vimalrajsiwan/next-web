@@ -1,4 +1,4 @@
-// "use client";
+// //"use client";
 
 // import HeroSection from "@/component/HeroSection";
 // import ServicesSection from "@/component/ServicesSection";
@@ -21,7 +21,7 @@
 //   );
 // }
 
-"use client";
+// //"use client";
 
 import HeroSection from "@/component/HeroSection";
 import AboutSection from "@/component/AboutSection";
