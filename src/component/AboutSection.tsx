@@ -14,7 +14,7 @@ export default function AboutSection() {
         About Us
       </motion.h2>
       <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
-        <strong>VizLix</strong> is a technology-driven IT services company that
+        <strong>vizlyx</strong> is a technology-driven IT services company that
         blends innovation, creativity, and technical excellence. We help
         organizations transform digitally through scalable and secure solutions
         built on modern technologies like{" "}

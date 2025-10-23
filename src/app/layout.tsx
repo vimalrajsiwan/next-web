@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VizLix IT Services",
+  title: "vizlyx IT Services",
   description: "Empowering Your Business with Innovative IT Solutions",
 };
 
@@ -37,7 +37,7 @@ export default function RootLayout({
           <Link href="/" className="flex items-center gap-4">
             <img
               src="/images/company-pic.png"
-              alt="VizLix Logo"
+              alt="vizlyx Logo"
               style={{ width: "8rem", height: "2.5rem" }}
               className="object-cover"
             />

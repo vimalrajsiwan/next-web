@@ -14,16 +14,16 @@ export default function Contact() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 font-sans">
         <section className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-extrabold text-indigo-700 mb-8 text-center">
-            Contact VizLix
+            Contact vizlyx
           </h1>
           <p className="mb-6 text-lg text-center">
             We'd love to hear from you! Fill out the form below or reach us
             directly at{" "}
             <a
-              href="mailto:info@vizlix.com"
+              href="mailto:info@vizlyx.com"
               className="text-indigo-700 hover:underline"
             >
-              info@vizlix.com
+              info@vizlyx.com
             </a>
             .
           </p>
@@ -57,10 +57,10 @@ export default function Contact() {
             <p>
               Email:{" "}
               <a
-                href="mailto:info@vizlix.com"
+                href="mailto:info@vizlyx.com"
                 className="text-indigo-700 hover:underline"
               >
-                info@vizlix.com
+                info@vizlyx.com
               </a>
             </p>
             <p>

@@ -19,7 +19,7 @@ export default function WhyChooseUsSection() {
         transition={{ duration: 0.5 }}
         className="text-4xl font-bold mb-10 text-gray-900"
       >
-        Why Choose VizLix
+        Why Choose vizlyx
       </motion.h2>
       <ul className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700">
         {points.map((p, i) => (

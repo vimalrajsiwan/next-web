@@ -27,7 +27,7 @@
 //         </h1>
 
 //         <p className="text-lg sm:text-xl text-gray-200 mb-10 leading-relaxed">
-//           At <span className="font-semibold text-blue-400">VizLix</span>, we
+//           At <span className="font-semibold text-blue-400">vizlyx</span>, we
 //           help startups and enterprises grow through modern web, cloud, and
 //           automation solutions.
 //         </p>
@@ -48,7 +48,7 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-[90vh] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="/images/hero-section.png"
+        src="/images/hero-section.webp"
         alt="IT team collaboration"
         fill
         className="object-cover brightness-75"
@@ -69,7 +69,7 @@ export default function HeroSection() {
           transition={{ delay: 0.2 }}
           className="text-xl text-gray-200 mb-8 leading-relaxed"
         >
-          At <span className="font-semibold text-blue-300">VizLix</span>, we
+          At <span className="font-semibold text-blue-300">vizlyx</span>, we
           help startups and enterprises grow through web, cloud, and automation
           expertise.
         </motion.p>

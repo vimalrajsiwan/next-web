@@ -15,18 +15,18 @@ export default function About() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 font-sans">
         <section className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-extrabold text-indigo-700 mb-8 text-center">
-            About VizLix
+            About vizlyx
           </h1>
           <div className="flex flex-col items-center mb-8">
             <Image
               src="/images/about.jpg"
-              alt="VizLix Team"
+              alt="vizlyx Team"
               width={180}
               height={180}
               className="rounded-xl shadow-lg object-cover mb-4"
             />
             <p className="text-lg mb-6 text-gray-800 text-center">
-              VizLix is dedicated to delivering innovative IT solutions that
+              vizlyx is dedicated to delivering innovative IT solutions that
               empower businesses to thrive in the digital era. Our mission is to
               provide reliable, scalable, and secure technology services
               tailored to our clients' unique needs.

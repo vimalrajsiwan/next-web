@@ -13,7 +13,7 @@ export default function FooterSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h4 className="text-2xl font-semibold text-white mb-4">VizLix</h4>
+          <h4 className="text-2xl font-semibold text-white mb-4">vizlyx</h4>
           <p className="text-sm leading-relaxed text-gray-400">
             Empowering businesses through smart, scalable, and secure IT
             solutions.
@@ -71,8 +71,8 @@ export default function FooterSection() {
           <ul className="space-y-2 text-sm">
             <li>
               Email:{" "}
-              <a href="mailto:info@vizlix.com" className="hover:text-white">
-                info@vizlix.com
+              <a href="mailto:info@vizlyx.com" className="hover:text-white">
+                info@vizlyx.com
               </a>
             </li>
             <li>Phone: +91 98765 43210</li>
@@ -94,7 +94,7 @@ export default function FooterSection() {
       </div>
 
       <div className="text-center text-sm text-gray-500 mt-12 border-t border-gray-800 pt-6">
-        © {new Date().getFullYear()} VizLix. All rights reserved.
+        © {new Date().getFullYear()} vizlyx. All rights reserved.
       </div>
     </footer>
   );
