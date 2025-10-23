@@ -1,17 +1,17 @@
 {
-  "name": "vizlix-app",
+  "name": "vizlyx-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vimalrajsiwan.github.io/next-web",
+  "homepage": "https://vizlyx.com",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "export": "next export",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out --branch gh-pages --dotfiles"
   },
   "dependencies": {
+    "framer-motion": "^12.23.24",
     "next": "15.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
