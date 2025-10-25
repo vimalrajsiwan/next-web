@@ -25,11 +25,6 @@ export default function MobileNav() {
       </button>
       {open && (
         <div className="absolute top-16 right-4 bg-white shadow-lg rounded-lg flex flex-col gap-4 p-6 z-50 md:hidden animate-fade-in">
-          {/* <Link href="/" className="text-gray-700 hover:text-indigo-600 transition" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/services" className="text-gray-700 hover:text-indigo-600 transition" onClick={() => setOpen(false)}>Services</Link>
-          <Link href="/about" className="text-gray-700 hover:text-indigo-600 transition" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-indigo-600 transition" onClick={() => setOpen(false)}>Contact</Link> */}
-
           <Link href="/">Home</Link>
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>

@@ -1,28 +1,3 @@
-// //"use client";
-
-// import HeroSection from "@/component/HeroSection";
-// import ServicesSection from "@/component/ServicesSection";
-// import CTASection from "@/component/CTASection";
-// import AboutSection from "@/component/AboutSection";
-// import FooterSection from "@/component/FooterSection";
-// import WhyChooseUsSection from "@/component/WhyChooseUsSection";
-// import IndustriesSection from "@/component/IndustriesSection";
-
-// export default function Page() {
-//   return (
-//     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 px-4 font-sans">
-//       <HeroSection />
-//       <AboutSection />
-//       <ServicesSection />
-//       <WhyChooseUsSection />
-//       <IndustriesSection />
-//       <CTASection />
-//     </div>
-//   );
-// }
-
-// //"use client";
-
 import HeroSection from "@/component/HeroSection";
 import AboutSection from "@/component/AboutSection";
 import ServicesSection from "@/component/ServicesSection";

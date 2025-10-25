@@ -105,7 +105,7 @@ export default function HeroSection() {
 
       <img
         src="/images/hero-section.webp"
-        alt="IT team collaboration"
+        alt="Vizlyx IT solutions team working on software development"
         className="absolute inset-0 w-full h-full object-cover brightness-75"
         loading="eager"
       />
@@ -113,7 +113,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-6">
         <h1 className="text-5xl sm:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
-          Empowering Businesses with Smart IT Solutions
+          Empowering Businesses with Smart IT Solutions by{" "}
+          <span className="text-blue-400">Vizlyx</span>
         </h1>
 
         <p className="text-xl text-gray-200 mb-8 leading-relaxed">

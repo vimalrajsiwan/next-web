@@ -1,31 +1,22 @@
 //"use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function FooterSection() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-16 mt-20">
+    <footer className="bg-gray-900 text-gray-300 py-16">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h4 className="text-2xl font-semibold text-white mb-4">vizlyx</h4>
+        <div>
+          <h4 className="text-2xl font-semibold text-white mb-4">Vizlyx</h4>
           <p className="text-sm leading-relaxed text-gray-400">
             Empowering businesses through smart, scalable, and secure IT
             solutions.
           </p>
-        </motion.div>
+        </div>
 
         {/* Company Links */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
+        <div>
           <h5 className="text-white font-semibold mb-4">Company</h5>
           <ul className="space-y-2 text-sm">
             <li>
@@ -44,14 +35,10 @@ export default function FooterSection() {
               </Link>
             </li>
           </ul>
-        </motion.div>
+        </div>
 
         {/* Services */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div>
           <h5 className="text-white font-semibold mb-4">Our Services</h5>
           <ul className="space-y-2 text-sm">
             <li>Web Development</li>
@@ -59,14 +46,10 @@ export default function FooterSection() {
             <li>Automation</li>
             <li>IT Consulting</li>
           </ul>
-        </motion.div>
+        </div>
 
         {/* Contact / Social */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-        >
+        <div>
           <h5 className="text-white font-semibold mb-4">Get in Touch</h5>
           <ul className="space-y-2 text-sm">
             <li>
@@ -90,12 +73,16 @@ export default function FooterSection() {
               GitHub
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       <div className="text-center text-sm text-gray-500 mt-12 border-t border-gray-800 pt-6">
-        © {new Date().getFullYear()} vizlyx. All rights reserved.
+        &copy; {new Date().getFullYear()} Vizlyx. All rights reserved.
       </div>
+
+      {/* <footer className="w-full py-6 bg-black text-white text-center">
+        &copy; {new Date().getFullYear()} vizlyx. All rights reserved.
+      </footer> */}
     </footer>
   );
 }
