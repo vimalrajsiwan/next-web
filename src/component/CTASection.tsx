@@ -40,12 +40,20 @@ export default function CTASection() {
         Ready to elevate your business with cutting-edge technology? Let’s talk
         about your next project — from web applications to cloud solutions.
       </p>
+
       <Link
         href="/contact"
-        className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:from-blue-700 hover:to-indigo-700 hover:scale-105 transition-transform duration-300 inline-block"
+        className="px-6 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-200 transition"
       >
         Contact Us
       </Link>
+
+      {/* <Link
+        href="/contact"
+        className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded shadow hover:bg-indigo-700 transition"
+      >
+        Contact Us
+      </Link> */}
     </section>
   );
 }

@@ -42,7 +42,7 @@ export default function AboutSection() {
       <h2 className="text-4xl font-bold mb-6 text-gray-900">About Us</h2>
 
       <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
-        <strong>vizlyx</strong> is a technology-driven IT services company that
+        <strong>Vizlyx</strong> is a technology-driven IT services company that
         blends innovation, creativity, and technical excellence. We help
         organizations transform digitally through scalable and secure solutions
         built on modern technologies like{" "}

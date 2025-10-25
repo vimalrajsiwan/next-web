@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 font-sans">
         <section className="max-w-2xl mx-auto">
           <h1 className="text-4xl font-extrabold text-indigo-700 mb-8 text-center">
-            Contact vizlyx
+            Contact Vizlyx
           </h1>
           <p className="mb-6 text-lg text-center">
             We'd love to hear from you! Fill out the form below or reach us
