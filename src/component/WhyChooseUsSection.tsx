@@ -1,43 +1,3 @@
-// //"use client";
-
-// import { motion } from "framer-motion";
-
-// const points = [
-//   "Proven expertise in .NET, C#, ReactJS, Angular, and Azure.",
-//   "Client-first approach with measurable outcomes.",
-//   "Agile, transparent, and collaborative work process.",
-//   "Full-stack development capabilities across technologies.",
-//   "Focus on scalability, performance, and security.",
-// ];
-
-// export default function WhyChooseUsSection() {
-//   return (
-//     <section className="py-20 text-center">
-//       <motion.h2
-//         initial={{ opacity: 0, y: 30 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.5 }}
-//         className="text-4xl font-bold mb-10 text-gray-900"
-//       >
-//         Why Choose vizlyx
-//       </motion.h2>
-//       <ul className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700">
-//         {points.map((p, i) => (
-//           <motion.li
-//             key={i}
-//             initial={{ opacity: 0, y: 20 }}
-//             whileInView={{ opacity: 1, y: 0 }}
-//             transition={{ delay: i * 0.1 }}
-//             className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition"
-//           >
-//             ✅ {p}
-//           </motion.li>
-//         ))}
-//       </ul>
-//     </section>
-//   );
-// }
-
 export default function WhyChooseUsSection() {
   const points = [
     "Proven expertise in .NET, C#, ReactJS, Angular, and Azure.",
@@ -53,16 +13,18 @@ export default function WhyChooseUsSection() {
         Why Choose <span className="text-blue-700">Vizlyx</span>
       </h2>
 
-      <ul className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700">
+      {/* Responsive grid instead of stacked list */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 text-left">
         {points.map((p, i) => (
-          <li
+          <div
             key={i}
-            className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition duration-300 border border-gray-100"
+            className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition duration-300 border border-gray-100 flex items-start gap-3"
           >
-            ✅ {p}
-          </li>
+            <span className="text-green-600 text-xl">✅</span>
+            <p className="text-gray-700">{p}</p>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
