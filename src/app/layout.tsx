@@ -36,7 +36,7 @@ export default function RootLayout({
         <nav className="w-full bg-white shadow-lg border-b border-gray-100 py-3 px-8 flex justify-between items-center sticky top-0 z-50">
           <Link href="/" className="flex items-center gap-4">
             <img
-              src="/images/company-pic.png"
+              src="/images/company-pic-updated.webp"
               alt="Vizlyx IT solutions team working on software development"
               style={{ width: "8rem", height: "2.5rem" }}
               className="object-cover"
