@@ -58,8 +58,8 @@ export default function FooterSection() {
                 info@vizlyx.com
               </a>
             </li>
-            <li>Phone: +91 98765 43210</li>
-            <li>Location: Pune, India</li>
+            <li>Phone: +91 88516 26273</li>
+            {/* <li>Location: Pune, India</li> */}
           </ul>
 
           <div className="flex gap-4 mt-4">
