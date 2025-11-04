@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <SEOHead />
         <nav className="w-full bg-white shadow-lg border-b border-gray-100 py-3 px-8 flex justify-between items-center sticky top-0 z-50">
-          <Link href="/" className="flex items-center gap-4">
+          <Link prefetch={true} href="/" className="flex items-center gap-4">
             <img
               src="/images/company-pic-updated.webp"
               alt="Vizlyx IT solutions team working on software development"
@@ -44,11 +44,21 @@ export default function RootLayout({
           </Link>
 
           <div className="hidden md:flex gap-8 text-lg font-semibold font-sans">
-            <Link href="/">Home</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/contact">Contact</Link>
+            <Link prefetch={true} href="/">
+              Home
+            </Link>
+            <Link prefetch={true} href="/services">
+              Services
+            </Link>
+            <Link prefetch={true} href="/about">
+              About
+            </Link>
+            <Link prefetch={true} href="/portfolio">
+              Portfolio
+            </Link>
+            <Link prefetch={true} href="/contact">
+              Contact
+            </Link>
           </div>
 
           <MobileNav />
