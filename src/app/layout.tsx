@@ -5,6 +5,7 @@ import "./globals.css";
 import MobileNav from "./MobileNav";
 import Footer from "@/component/footer";
 import SEOHead from "@/component/SEOHead";
+import FooterSection from "@/component/FooterSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "vizlyx IT Services",
+  title: "Vizlyx IT Services",
   description: "Empowering Your Business with Innovative IT Solutions",
 };
 
@@ -32,12 +33,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SEOHead />
-        {/* NAVBAR */}
         <nav className="w-full bg-white shadow-lg border-b border-gray-100 py-3 px-8 flex justify-between items-center sticky top-0 z-50">
           <Link href="/" className="flex items-center gap-4">
             <img
-              src="/images/company-pic.png"
-              alt="vizlyx Logo"
+              src="/images/company-pic-updated.webp"
+              alt="Vizlyx IT solutions team working on software development"
               style={{ width: "8rem", height: "2.5rem" }}
               className="object-cover"
             />
@@ -58,7 +58,8 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* FOOTER */}
-        <Footer />
+        {/* <Footer /> */}
+        <FooterSection />
       </body>
     </html>
   );
