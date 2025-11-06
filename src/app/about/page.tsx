@@ -1,16 +1,74 @@
-import SEOHead from "@/component/SEOHead";
-import Image from "next/image";
+// import SEOHead from "@/component/SEOHead";
+import { Metadata } from "next";
+// import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "About Vizlyx | Empowering Businesses with Technology",
+  description:
+    "Learn about Vizlyx, our mission, and how we empower businesses through innovative IT solutions, web development, and cloud consulting.",
+  keywords: [
+    "About Vizlyx",
+    "IT company",
+    "technology partner",
+    "software firm",
+    "cloud services",
+  ],
+  openGraph: {
+    title: "About Vizlyx | Technology Partner for Modern Businesses",
+    description:
+      "Vizlyx is a leading IT services provider helping businesses innovate through software, cloud, and AI-driven solutions.",
+    images: ["/og-image.jpg"],
+    url: "https://vizlyx.com/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Vizlyx | Your Technology Partner",
+    description: "Innovating technology to empower your business success.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://vizlyx.com/about",
+  },
+};
+
 export default function About() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vizlyx",
+      url: "https://vizlyx.com",
+      logo: "https://vizlyx.com/og-image.jpg",
+      foundingDate: "2024",
+      founder: {
+        "@type": "Person",
+        name: "Vizlyx Team",
+      },
+      description:
+        "Vizlyx is a technology company offering IT consulting, software development, and cloud-based digital solutions.",
+      sameAs: [
+        "https://www.linkedin.com/company/vizlyx",
+        "https://twitter.com/vizlyx",
+      ],
+    },
+  };
+
   return (
-    <>
-      <SEOHead
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      {/* <SEOHead
         title="About Vizlyx | Innovative IT Consulting & Digital Transformation Experts"
         description="Vizlyx empowers businesses worldwide with modern IT consulting, cloud transformation, and custom software development. Learn more about our story, mission, and why companies trust us to shape their digital future."
         keywords="Vizlyx, IT consulting, digital transformation, software development, cloud modernization, IT solutions company, technology consulting firm"
         url="https://vizlyx.com/about"
-      />
+      /> */}
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 font-sans text-gray-800">
         <section className="max-w-5xl mx-auto">
@@ -217,6 +275,6 @@ export default function About() {
           </div>
         </section>
       </div>
-    </>
+    </main>
   );
 }

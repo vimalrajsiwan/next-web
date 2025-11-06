@@ -1,16 +1,115 @@
-import SEOHead from "@/component/SEOHead";
-import Image from "next/image";
+// import SEOHead from "@/component/SEOHead";
+import { Metadata } from "next";
+// import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Portfolio | Vizlyx IT Projects & Case Studies",
+  description:
+    "Explore Vizlyx’s portfolio of successful IT projects — custom web apps, cloud migration, enterprise software, and AI chatbot solutions tailored for global clients.",
+  keywords: [
+    "Vizlyx portfolio",
+    "IT projects",
+    "software development",
+    "web development",
+    "cloud solutions",
+    "AI chatbot",
+    "enterprise software",
+    "case studies",
+  ],
+  openGraph: {
+    title: "Portfolio | Vizlyx IT Projects & Case Studies",
+    description:
+      "See how Vizlyx helps businesses grow with web, mobile, and cloud-based IT solutions.",
+    url: "https://vizlyx.com/portfolio",
+    type: "website",
+    images: ["/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | Vizlyx IT Projects & Case Studies",
+    description:
+      "Showcasing Vizlyx’s proven expertise in IT consulting, web, and cloud projects.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://vizlyx.com/portfolio",
+  },
+};
+
 export default function Portfolio() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Vizlyx Project Portfolio",
+    description:
+      "A showcase of Vizlyx’s successful IT projects in software development, cloud migration, and AI automation.",
+    numberOfItems: 6,
+    itemListElement: [
+      {
+        "@type": "CreativeWork",
+        position: 1,
+        name: "E-commerce Web Platform",
+        description:
+          "Developed a scalable online store with integrated payments and analytics.",
+        url: "https://vizlyx.com/portfolio#ecommerce-platform",
+      },
+      {
+        "@type": "CreativeWork",
+        position: 2,
+        name: "Healthcare Management System",
+        description:
+          "Built a HIPAA-compliant platform for patient scheduling and data security.",
+        url: "https://vizlyx.com/portfolio#healthcare-system",
+      },
+      {
+        "@type": "CreativeWork",
+        position: 3,
+        name: "Cloud Migration Project",
+        description:
+          "Migrated financial systems to AWS, improving performance and reducing costs.",
+        url: "https://vizlyx.com/portfolio#cloud-migration",
+      },
+      {
+        "@type": "CreativeWork",
+        position: 4,
+        name: "Mobile Banking App",
+        description:
+          "Created a secure mobile banking app with biometric login and live tracking.",
+        url: "https://vizlyx.com/portfolio#mobile-banking",
+      },
+      {
+        "@type": "CreativeWork",
+        position: 5,
+        name: "SaaS Analytics Dashboard",
+        description:
+          "Built a data-driven SaaS dashboard using React and Node.js.",
+        url: "https://vizlyx.com/portfolio#saas-dashboard",
+      },
+      {
+        "@type": "CreativeWork",
+        position: 6,
+        name: "AI Chatbot Solution",
+        description:
+          "Implemented a conversational AI system for customer support automation.",
+        url: "https://vizlyx.com/portfolio#ai-chatbot",
+      },
+    ],
+  };
+
   return (
-    <>
-      <SEOHead
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      {/* <SEOHead
         title="Portfolio - Vizlyx Projects & Case Studies"
         description="Explore Vizlyx's portfolio of successful IT projects — from custom web applications and enterprise software to cloud transformation and mobile app solutions."
         keywords="Vizlyx portfolio, IT projects, software development, cloud solutions, web development, case studies"
         url="https://vizlyx.com/portfolio"
-      />
+      /> */}
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans py-16 px-6">
         <section className="max-w-6xl mx-auto text-center">
@@ -203,6 +302,6 @@ export default function Portfolio() {
           </div>
         </section>
       </div>
-    </>
+    </main>
   );
 }

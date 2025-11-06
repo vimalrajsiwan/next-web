@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import SEOHead from "@/component/SEOHead";
+// import SEOHead from "@/component/SEOHead";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,14 +35,68 @@ export const metadata: Metadata = {
 };
 
 export default function Services() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "IT Consulting, Web Development, and Cloud Solutions",
+    provider: {
+      "@type": "Organization",
+      name: "Vizlyx",
+      url: "https://vizlyx.com",
+      logo: "https://vizlyx.com/og-image.jpg",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "India",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Vizlyx IT Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Web & App Development",
+            description:
+              "Custom software development using React, .NET, Java, and modern frameworks.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Cloud Consulting",
+            description:
+              "End-to-end cloud migration, DevOps, and infrastructure optimization.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Cybersecurity",
+            description:
+              "Data protection, threat monitoring, and compliance-focused security solutions.",
+          },
+        },
+      ],
+    },
+  };
+
   return (
-    <>
-      <SEOHead
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
+      {/* <SEOHead
         title="Our Services"
         description="Vizlyx provides full-stack web development, cloud solutions, and enterprise software services using .NET, Angular, ReactJS, Java, and Azure."
         keywords="software development, web app, Azure cloud, .NET, Angular, ReactJS, enterprise IT services"
         url="https://vizlyx.com/services"
-      />
+      /> */}
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 font-sans text-gray-800">
         <section className="max-w-5xl mx-auto mb-16 text-center">
@@ -174,6 +228,6 @@ export default function Services() {
           </Link>
         </section>
       </div>
-    </>
+    </main>
   );
 }
