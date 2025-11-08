@@ -70,7 +70,6 @@ export default function Page() {
     <main>
       {/* ✅ JSON-LD must include async to avoid Next.js warnings */}
       <script
-        async
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />

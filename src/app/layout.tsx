@@ -66,7 +66,6 @@ export default function RootLayout({
       <head>
         {/* ✅ JSON-LD Schema (safe for Next.js App Router) */}
         <script
-          async
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
