@@ -92,6 +92,7 @@ export default function RootLayout({
               telephone: "+91-8851626273",
               priceRange: "$$",
               // address: {
+
               //   "@type": "PostalAddress",
               //   streetAddress: "Your Office Address",
               //   addressLocality: "City",
