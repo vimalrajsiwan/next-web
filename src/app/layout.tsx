@@ -3,10 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import MobileNav from "./MobileNav";
-// import Footer from "@/component/footer";
-// import SEOHead from "@/component/SEOHead";
 import FooterSection from "@/component/FooterSection";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,58 +15,45 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata = {
-//   title: "Vizlyx | IT Services & Consulting",
-//   description:
-//     "Vizlyx delivers modern web, cloud, and software development solutions worldwide.",
-//   metadataBase: new URL("https://vizlyx.com"),
-//   openGraph: {
-//     title: "Vizlyx | IT Services & Consulting",
-//     description:
-//       "Innovative IT solutions to transform your business digitally.",
-//     url: "https://vizlyx.com",
-//     siteName: "Vizlyx",
-//     images: ["/og-image.jpg"],
-//     type: "website",
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Vizlyx | IT Services & Consulting",
-//     description:
-//       "Innovative IT solutions to transform your business digitally.",
-//     images: ["/og-image.jpg"],
-//   },
-//   icons: { icon: "/favicon.ico" },
-// };
-
 export const metadata: Metadata = {
   title: {
-    default: "Vizlyx | IT Services & Consulting",
+    default: "Vizlyx | Empowering Businesses with Smart IT Solutions",
     template: "%s | Vizlyx",
   },
   description:
-    "Vizlyx delivers modern web, cloud, and software development solutions worldwide.",
+    "Vizlyx empowers businesses with smart IT solutions, web development, and cloud consulting for digital growth.",
   metadataBase: new URL("https://vizlyx.com"),
   openGraph: {
-    title: "Vizlyx | IT Services & Consulting",
+    title: "Vizlyx | Empowering Businesses with Smart IT Solutions",
     description:
-      "Innovative IT solutions to transform your business digitally.",
+      "Vizlyx delivers innovative IT, software, and cloud solutions to help companies thrive in the digital age.",
     url: "https://vizlyx.com",
     siteName: "Vizlyx",
-    images: ["/og-image.jpg"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vizlyx - Empowering Businesses with Smart IT Solutions",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vizlyx | IT Services & Consulting",
+    title: "Vizlyx | Empowering Businesses with Smart IT Solutions",
     description:
-      "Innovative IT solutions to transform your business digitally.",
+      "Transform your business digitally with Vizlyx IT consulting and software development services.",
     images: ["/og-image.jpg"],
     creator: "@vizlyx",
   },
-  icons: { icon: "/favicon.ico" },
-  alternates: { canonical: "https://vizlyx.com" },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: "https://vizlyx.com",
+  },
 };
 
 export default function RootLayout({
@@ -79,30 +63,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+        {/* ✅ JSON-LD Schema (safe for Next.js App Router) */}
         <script
+          async
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "Organization",
               name: "Vizlyx",
-              image: "https://vizlyx.com/og-image.jpg",
               url: "https://vizlyx.com",
+              logo: "https://vizlyx.com/og-image.jpg",
+              description: "Empowering Businesses with Smart IT Solutions",
               telephone: "+91-8851626273",
-              priceRange: "$$",
-              // address: {
-              //   "@type": "PostalAddress",
-              //   streetAddress: "Your Office Address",
-              //   addressLocality: "City",
-              //   addressRegion: "State",
-              //   postalCode: "PINCODE",
-              //   addressCountry: "IN",
-              // },
+              sameAs: [
+                "https://linkedin.com/company/vizlyx",
+                "https://x.com/vizlyx",
+              ],
             }),
           }}
         />
-      </Head>
+      </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
